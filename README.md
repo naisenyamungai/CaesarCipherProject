@@ -15,13 +15,16 @@
 
 | Behaviour     | Example Input | Example Output  |
  | ------------- | ------------- | ------------- |
- | User types in a single letter and a key(number)   | "D",5  | "I"  |
- | For every character entered, it's position should change with the number of key  | "ABC",1  | "BCD"  |
- | Each character in a sentence should shift forward by the number of the shift key  | "I am happy",2  | "K co jcrra"  |
- | Shift key must be in range 1-25  | "A",50  | Asks for input again  |
- | Return nothing when empty string is submitted  | "",2  | ""  |
- | Encrypt lower and uppercase letters appropriately  | "A caT",1  | "B dbU"  |
- | Ensure looping through the alphabet shift  | "Z",1  | "A"  |
+ | Program needs to compile and run the code  | User types into the terminal javac App.java && java App | program runs
+    and asks for user input |
+ | Program asks the user for a letter and a step value  | "D",5  | encrypts to "I" and decrypts "I" back to "D" |
+ | Program needs to compile and run the code for the next test | User types into the terminal javac App.java && java App | program runs
+     and asks for user input |
+ | For every character entered, it's position should change with the number of key  | "ABC",6 | Encypts to  "GHI" and decrypts to "ABC"  |
+ | Shift key must be in range 1-25  | "B",28  | Returns the value at 28 - 25  |
+ | Return nothing when empty string is submitted  | "", 27  | ""  |
+ | Encrypt & Decrypts lower and uppercase letters to uppercase | "abcD", 6  | Encrypts to "GHIJ" and decrypts to "ABCD" |
+ | Loops through the entire alphabet correctly | "Z",1  and "A", 25 | "A" and "Z" respectively |
 
 
 ## Technologies Used
@@ -37,7 +40,8 @@
 
 >- Clone this repository
 >- Open it on your IDE
->- Compile the App.java file found in the src/main/java folder. If you're using the terminal, navigate to this folder and run 'javac App.java'
+>- Compile the App.java file found in the src/main/java folder. If you're using the terminal, navigate to this folder
+    and run 'javac App.java'
 >- Run the application on the terminal. Run using the command 'java App' and use the application
 
 ## Running tests
