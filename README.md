@@ -15,11 +15,9 @@
 
 | Behaviour     | Example Input | Example Output  |
  | ------------- | ------------- | ------------- |
- | Program needs to compile and run the code  | User types into the terminal javac App.java && java App | program runs
-    and asks for user input |
+ | Program needs to compile and run the code  | User types into the terminal javac App.java && java App | program runs and asks for user input |
  | Program asks the user for a letter and a step value  | "D",5  | encrypts to "I" and decrypts "I" back to "D" |
- | Program needs to compile and run the code for the next test | User types into the terminal javac App.java && java App | program runs
-     and asks for user input |
+ | Program needs to compile and run the code for the next test | User types into the terminal javac App.java && java App | program runs and asks for user input |
  | For every character entered, it's position should change with the number of key  | "ABC",6 | Encypts to  "GHI" and decrypts to "ABC"  |
  | Shift key must be in range 1-25  | "B",28  | Returns the value at 28 - 25  |
  | Return nothing when empty string is submitted  | "", 27  | ""  |
