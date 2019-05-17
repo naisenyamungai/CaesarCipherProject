@@ -1,5 +1,5 @@
 ## Project Name
-           QUOTES CREATION
+           Command Line Caesar Cipher
 
 ## Author
             [Naisenya Mungai](https://github.com/naisenyamungai)
@@ -7,18 +7,21 @@
 
 
 ## Project Description
-> A program that allows a user to create a quote and publish it, vote on it and delete the quote if need be.
+> A program that Implement a Caesar cipher, both encoding, and decoding. The key is an integer from 1 to 25.
+  This cipher rotates the letters of the alphabet (A to Z). The encoding replaces each letter with the 1st to 25th
+  next letter in the alphabet (wrapping Z to A). So key 2 encrypts "HI" to "JK", but key 20 encrypts "HI" to "BC".
 
 ## Project Overview
 
-| Behavior        | Input           | Outcome  |
-| ------------- |:-------------:| -----:|
-| User types a quote, fills the author, date and  submitter| clicks / ADD QUOTE | Quote appears on the window |
-| Use clicks on see details | Click SHOW DETAILS | All the information regarding the quote appears
-| User likes a quote and want to like the quote | Click Upvote  | Upvote is added |
-| User does not like the quote and wants to downvote | Click DownVote  | Downote is added |
-| User does not like a quote and wants to delete it  | Click Delete Quote| Quote is deleted |
-| When a quote gets more votes that all the others | use double clicks on the quote | It is highlighted a different color |
+| Behaviour     | Example Input | Example Output  |
+ | ------------- | ------------- | ------------- |
+ | User types in a single letter and a key(number)   | "D",5  | "I"  |
+ | For every character entered, it's position should change with the number of key  | "ABC",1  | "BCD"  |
+ | Each character in a sentence should shift forward by the number of the shift key  | "I am happy",2  | "K co jcrra"  |
+ | Shift key must be in range 1-25  | "A",50  | Asks for input again  |
+ | Return nothing when empty string is submitted  | "",2  | ""  |
+ | Encrypt lower and uppercase letters appropriately  | "A caT",1  | "B dbU"  |
+ | Ensure looping through the alphabet shift  | "Z",1  | "A"  |
 
 
 ## Technologies Used
@@ -27,27 +30,20 @@
 >- JUnit
 
 
-
 ## Known Bugs
 > No known Bugs at the moment
 
-## SetUp Instructions
-> Internet Connection is required for the following instructions to be executed
->- Open Chrome, Mozilla or any browser in your disposal.
->- Internet Connection is a must.
->- Search naisenyamungai on github.
->- Click on the active link on Quotes-Creation.
->- No other downloads or plug-ins are required.
->- Type in the author, submitter, quote and date and see your quote appear.
->- For any feedback on bugs and errors contact naisenyamungai@gmail.com or 0721635386.
->- Alternatively you can clone the project onto your local machine to have a sneak peak at the code used.
+## Setup/Installation Requirements
 
-> Requirements:
->- Author Name, Quote, Submitter Details, Date of Submission.
->- Create a Quote.
->- Upvote or downvote a quote.
->- Delete a Quote
->- See the number of upvotes and number of downvotes for each quote.
+>- Clone this repository
+>- Open it on your IDE
+>- Compile the App.java file found in the src/main/java folder. If you're using the terminal, navigate to this folder and run 'javac App.java'
+>- Run the application on the terminal. Run using the command 'java App' and use the application
+
+## Running tests
+>- Navigate to any of the files in src/test/java
+>- Open the file
+>- On the display tab in the IDE, right click the file and run it
 
 ## Support and contact details
 > naisenyamungai@gmail.com
